@@ -10,8 +10,6 @@ const MAX_FILE_SIZE = 5 * 1024 * 1024; // 5MB per file — adjust to your host's
 const ALLOWED_ORIGINS = [
   "https://tsdruk.pl",
   "https://www.tsdruk.pl",
-  "http://localhost:3000",
-  "http://localhost:3001",
 ];
 
 function corsHeaders(origin: string) {

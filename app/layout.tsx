@@ -137,8 +137,8 @@ export default function RootLayout({
     >
       <head>
         {/* Replace content values with your actual verification codes */}
-        <meta name="google-site-verification" content="YOUR_GOOGLE_VERIFICATION_CODE" />
-        <meta name="msvalidate.01" content="YOUR_BING_VERIFICATION_CODE" />
+        <meta name="google-site-verification" content="WboKM5L6BliL49dtZCEQjW4vtF0RQoHBBqNVRMxpWDc" />
+        <meta name="msvalidate.01" content="AFBF2F4E184A2D36B32969B7874DAB5B" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

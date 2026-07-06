@@ -255,6 +255,7 @@ const handleSubmit = async (e: React.FormEvent) => {
     { href: '#galeria', label: 'Galeria' },
     { href: '#opinie', label: 'Opinie' },
     { href: '#kontakt', label: 'Kontakt' },
+    { href: '/privacy', label: 'Polityka prywatności' },
   ]
 
   return (

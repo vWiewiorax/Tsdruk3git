@@ -25,6 +25,8 @@ export const metadata: Metadata = {
     'naprawa drukarki',
     'serwis drukarek Rzeszów',
     'naprawa drukarek Rzeszów',
+    'naprawa drukarek Łańcut',
+    'naprawa drukarek Podkarpacie',
     'serwis drukarek Podkarpacie',
     'naprawa drukarki laserowej',
     'naprawa drukarki atramentowej',

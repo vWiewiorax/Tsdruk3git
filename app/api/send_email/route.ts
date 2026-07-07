@@ -116,7 +116,7 @@ export async function POST(req: NextRequest) {
     `;
 
     await transporter.sendMail({
-      to: "storivakontakt@gmail.com",
+      to: "tomasz.strzepka@gmail.com",
       subject: `Nowe zgłoszenie naprawy drukarki — TSdruk (${name})`,
       html,
       attachments,

@@ -55,7 +55,6 @@ export const metadata: Metadata = {
 'profesjonalny serwis drukarek',
 'naprawa drukarki laserowej',
 'naprawa drukarki atramentowej',
-
 'serwis HP',
 'serwis Canon',
 'serwis Brother',
@@ -67,7 +66,6 @@ export const metadata: Metadata = {
 'serwis Lexmark',
 'serwis OKI',
 'serwis Konica Minolta',
-
 'drukarka nie drukuje',
 'drukarka nie pobiera papieru',
 'drukarka drukuje puste kartki',
@@ -78,7 +76,6 @@ export const metadata: Metadata = {
 'jak podłączyć drukarkę do WiFi',
 'jak zainstalować drukarkę',
 'dlaczego drukarka nie drukuje',
-
 'tani serwis drukarek',
 'profesjonalny serwis drukarek',
 'ekspresowa naprawa drukarek',
@@ -88,7 +85,6 @@ export const metadata: Metadata = {
 'serwis drukarek z dojazdem',
 'bezpłatna diagnoza drukarki',
 'szybki serwis drukarek',
-
 'serwis drukarek',
 'naprawa drukarek',
 'serwis drukarek [miasto]',
@@ -109,7 +105,6 @@ export const metadata: Metadata = {
 'bezpłatna diagnostyka drukarki',
 'szybka naprawa drukarki',
 'profesjonalny serwis drukarek',
-
 'naprawa drukarek HP',
 'naprawa drukarek Canon',
 'naprawa drukarek Brother',
@@ -220,7 +215,6 @@ export const metadata: Metadata = {
 'naprawa problemów z drukarką',
 'serwis sprzętu biurowego',
 'naprawa sprzętu biurowego'
-    
   ],
   authors: [{ name: 'TSdruk' }],
   robots: {

@@ -111,7 +111,7 @@ export const metadata: Metadata = {
 'serwis drukarek laserowych',
 'serwis drukarek atramentowych',
 'konfiguracja drukarek WiFi',
-'naprawa urządzeń wielofunkcyjnych'
+'naprawa urządzeń wielofunkcyjnych',
     'naprawa kserokopiarek',
     'diagnostyka drukarki',
     'czyszczenie drukarki',

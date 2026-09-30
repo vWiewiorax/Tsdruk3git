@@ -9,8 +9,6 @@ import {
   MapPin,
   Clock,
   CheckCircle,
-  Menu,
-  X,
   ChevronDown,
   Zap,
   Shield,
@@ -24,13 +22,15 @@ import {
   X as XIcon,
   ImageIcon,
 } from 'lucide-react'
-
-const COMPANY_NAME = 'TSdruk'
-const PHONE = '796 584 933'
-const EMAIL = 'tomasz.strzepka@gmail.com'
-const ADDRESS = 'Krzemienica 614, 37-127 Krzemienica'
-const HOURS_WEEKDAY = '8:00 – 16:00'
-const HOURS_SATURDAY = '10:00 – 14:00'
+import SiteNav from '@/components/SiteNav'
+import SiteFooter from '@/components/SiteFooter'
+import {
+  ADDRESS,
+  EMAIL,
+  HOURS_SATURDAY,
+  HOURS_WEEKDAY,
+  PHONE,
+} from '@/lib/site'
 
 const services = [
   {
@@ -53,15 +53,15 @@ const services = [
   },
   {
     icon: <Shield className="w-8 h-8" />,
-    title: 'Serwis gwarancyjny i pogwarancyjny',
+    title: 'Serwis pogwarancyjny',
     description:
-      'Realizuję naprawy gwarancyjne oraz udzielam własnej gwarancji na każdą wykonaną przeze mnie naprawę.',
+      'Wykonuję naprawy pogwarancyjne i udzielam własnej gwarancji na każdą wykonaną przeze mnie naprawę.',
   },
   {
     icon: <Award className="w-8 h-8" />,
     title: 'Dojazd do klienta',
     description:
-      'Mogę przyjechać do Ciebie, odebrać drukarkę, naprawić ją i dostarczyć z powrotem — bez wychodzenia z domu czy biura.',
+      'Po wcześniejszym uzgodnieniu mogę odebrać drukarkę, naprawić ją i dostarczyć z powrotem.',
   },
   {
     icon: <CheckCircle className="w-8 h-8" />,
@@ -78,7 +78,7 @@ const pricing = [
   { service: 'Czyszczenie głowicy drukującej', price: 'od 50 zł', highlight: false },
   { service: 'Wymiana bębna / wałka podającego', price: 'od 60 zł', highlight: false },
   { service: 'Przegląd prewencyjny + czyszczenie', price: 'od 70 zł', highlight: false },
-  { service: 'Dojazd do klienta', price: 'od 30 zł', highlight: false },
+  { service: 'Dojazd do klienta (po uzgodnieniu)', price: 'od 30 zł', highlight: false },
   { service: 'Konfiguracja sieciowa / instalacja', price: 'od 50 zł', highlight: false },
 ]
 
@@ -154,8 +154,6 @@ function AnimatedStat({ value, label, icon }: { value: number; suffix: string; l
 }
 
 export default function App() {
-  const [menuOpen, setMenuOpen] = useState(false)
-  const [scrolled, setScrolled] = useState(false)
   const [activeSection, setActiveSection] = useState('')
   const [formData, setFormData] = useState({
     name: '',
@@ -208,12 +206,6 @@ const handleSubmit = async (e: React.FormEvent) => {
   useScrollReveal()
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 20)
-    window.addEventListener('scroll', onScroll)
-    return () => window.removeEventListener('scroll', onScroll)
-  }, [])
-
-  useEffect(() => {
     const sections = ['o-mnie', 'uslugi', 'cennik', 'opinie', 'kontakt']
     const observer = new IntersectionObserver(
       (entries) => {
@@ -248,81 +240,10 @@ const handleSubmit = async (e: React.FormEvent) => {
     input.files = dt.files
   }, [files])
 
-  const navLinks = [
-    { href: '#o-mnie', label: 'O mnie' },
-    { href: '#uslugi', label: 'Usługi' },
-    { href: '#cennik', label: 'Cennik' },
-    { href: '#galeria', label: 'Galeria' },
-    { href: '#opinie', label: 'Opinie' },
-    { href: '#kontakt', label: 'Kontakt' },
-    { href: '/privacy', label: 'Polityka prywatności' },
-  ]
-
   return (
     <div className="font-sans text-gray-800 bg-white">
       {/* NAVIGATION */}
-      <nav className={`fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur transition-shadow duration-300 ${scrolled ? 'shadow-md' : 'shadow-sm'}`}>
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-18 py-3">
-            <a href="#" className="flex items-center gap-2 font-extrabold text-2xl text-blue-700">
-              <Printer className="w-7 h-7" />
-              <span>{COMPANY_NAME}</span>
-            </a>
-            {/* Desktop nav */}
-            <div className="hidden md:flex items-center gap-8">
-              {navLinks.map((l) => {
-                const id = l.href.replace('#', '')
-                const isActive = activeSection === id
-                return (
-                  <a
-                    key={l.href}
-                    href={l.href}
-                    className={`font-medium transition-colors relative pb-0.5 ${isActive ? 'text-blue-700 after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:bg-blue-700 after:rounded' : 'text-gray-600 hover:text-blue-700'}`}
-                  >
-                    {l.label}
-                  </a>
-                )
-              })}
-              <a
-                href="#kontakt"
-                className="ml-2 bg-blue-700 hover:bg-blue-800 text-white px-5 py-2.5 rounded-full font-semibold transition-colors shadow-sm"
-              >
-                Zgłoś usterkę
-              </a>
-            </div>
-            {/* Mobile toggle */}
-            <button
-              className="md:hidden text-gray-700"
-              onClick={() => setMenuOpen(!menuOpen)}
-              aria-label="Menu"
-            >
-              {menuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-            </button>
-          </div>
-        </div>
-        {/* Mobile menu */}
-        {menuOpen && (
-          <div className="md:hidden bg-white border-t px-4 pb-4 flex flex-col gap-3">
-            {navLinks.map((l) => (
-              <a
-                key={l.href}
-                href={l.href}
-                className="text-gray-700 font-medium py-2 border-b border-gray-100"
-                onClick={() => setMenuOpen(false)}
-              >
-                {l.label}
-              </a>
-            ))}
-            <a
-              href="#kontakt"
-              className="mt-2 bg-blue-700 text-white text-center px-5 py-2 rounded-full font-semibold"
-              onClick={() => setMenuOpen(false)}
-            >
-              Zgłoś usterkę
-            </a>
-          </div>
-        )}
-      </nav>
+      <SiteNav activeSection={activeSection} />
 
       {/* HERO */}
       <section className="min-h-screen bg-gray-50 flex items-center pt-20 relative overflow-hidden">
@@ -470,7 +391,7 @@ const handleSubmit = async (e: React.FormEvent) => {
             </p>
             <p className="text-gray-600 mb-7 leading-relaxed reveal reveal-delay-2">
               Każdą naprawę zaczynam od bezpłatnej diagnostyki. Dopiero po
-              jej wykonaniu przedstawiam dokładną wycenę — bez ukrytych kosztów.
+              jej wykonaniu przedstawiam dokładną wycenę, bez ukrytych kosztów.
               Na każdą wykonaną naprawę udzielam własnej gwarancji.
             </p>
             <ul className="space-y-3 mb-8 reveal reveal-delay-3">
@@ -478,7 +399,7 @@ const handleSubmit = async (e: React.FormEvent) => {
                 'Obsługuję wszystkie marki: HP, Canon, Epson, Brother, Samsung i inne',
                 'Ponad 20 lat doświadczenia w serwisie drukarek',
                 'Używam części zamiennych i materiałów eksploatacyjnych',
-                'Naprawiam na miejscu lub odbieram i dostarczam sprzęt do klienta',
+                'Naprawiam w serwisie lub na miejscu u klienta po wcześniejszym uzgodnieniu',
               ].map((item) => (
                 <li key={item} className="flex items-start gap-3 text-gray-700">
                   <CheckCircle className="w-5 h-5 text-blue-600 shrink-0 mt-0.5" />
@@ -575,7 +496,7 @@ const handleSubmit = async (e: React.FormEvent) => {
           </div>
           <p className="text-center text-gray-400 text-sm mt-6 reveal reveal-delay-2">
             * Ceny mogą różnić się w zależności od stopnia uszkodzenia i modelu urządzenia.
-            Ostateczna wycena po diagnostyce — zawsze przed przystąpieniem do naprawy.
+            Ostateczna wycena po diagnostyce, zawsze przed przystąpieniem do naprawy.
           </p>
         </div>
       </section>
@@ -698,7 +619,7 @@ const handleSubmit = async (e: React.FormEvent) => {
             Naprawię Twoją drukarkę już w 24h
           </h2>
           <p className="text-blue-100 text-lg mb-8">
-            Zadzwoń teraz lub wyślij zgłoszenie — bezpłatna diagnostyka i uczciwa wycena.
+            Zadzwoń teraz lub wyślij zgłoszenie. Bezpłatna diagnostyka i uczciwa wycena.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <a
@@ -891,7 +812,7 @@ const handleSubmit = async (e: React.FormEvent) => {
                         <p className="text-xs">
                           <span className="font-semibold text-blue-600">Kliknij</span> lub przeciągnij pliki tutaj
                         </p>
-                        <p className="text-xs text-gray-300">JPG, PNG, PDF, DOC — maks. 5 plików</p>
+                        <p className="text-xs text-gray-300">JPG, PNG, PDF, DOC, maks. 5 plików</p>
                       </div>
                     </div>
                     {files.length > 0 && (
@@ -947,24 +868,7 @@ const handleSubmit = async (e: React.FormEvent) => {
       </section>
 
       {/* FOOTER */}
-      <footer className="bg-gray-900 text-gray-400 py-8">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-4">
-          <div className="flex items-center gap-2 text-white font-extrabold text-2xl">
-            <Printer className="w-7 h-7" />
-            {COMPANY_NAME}
-          </div>
-          <p className="text-sm">
-            © {new Date().getFullYear()} {COMPANY_NAME}. Wszelkie prawa zastrzeżone.
-          </p>
-          <div className="flex gap-5 text-sm">
-            {navLinks.map((l) => (
-              <a key={l.href} href={l.href} className="hover:text-white transition-colors">
-                {l.label}
-              </a>
-            ))}
-          </div>
-        </div>
-      </footer>
+      <SiteFooter />
     </div>
   )
 }

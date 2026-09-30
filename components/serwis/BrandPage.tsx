@@ -16,17 +16,17 @@ const STEPS = [
   {
     icon: <Search className="w-6 h-6" />,
     title: 'Bezpłatna diagnostyka',
-    desc: 'Sprawdzam urządzenie i ustalam przyczynę usterki — bez opłat i zobowiązań.',
+    desc: 'Sprawdzam urządzenie i ustalam przyczynę usterki, bez opłat i zobowiązań.',
   },
   {
     icon: <ClipboardCheck className="w-6 h-6" />,
     title: 'Uczciwa wycena',
-    desc: 'Przedstawiam koszt naprawy przed przystąpieniem do prac — bez ukrytych kosztów.',
+    desc: 'Przedstawiam koszt naprawy przed przystąpieniem do prac, bez ukrytych kosztów.',
   },
   {
     icon: <Wrench className="w-6 h-6" />,
     title: 'Naprawa',
-    desc: 'Usuwam usterkę na miejscu u Klienta lub w serwisie — większość napraw w 24h.',
+    desc: 'Usuwam usterkę w serwisie lub u Klienta po wcześniejszym uzgodnieniu.',
   },
   {
     icon: <Shield className="w-6 h-6" />,
@@ -64,7 +64,7 @@ export default function BrandPage({ kind, brand }: { kind: SerwisKind; brand: Br
           <p className="text-gray-600 text-lg leading-relaxed max-w-2xl mb-8">
             Specjalizuję się w naprawie i konserwacji {devicePlural} {brand.name}. Diagnozuję
             i usuwam usterki mechaniczne, elektroniczne oraz programowe, przywracając
-            urządzeniom pełną sprawność — gwarancyjnie i pogwarancyjnie.
+            urządzeniom pełną sprawność w ramach serwisu pogwarancyjnego.
           </p>
           <div className="flex flex-wrap gap-4">
             <Link
@@ -119,19 +119,19 @@ export default function BrandPage({ kind, brand }: { kind: SerwisKind; brand: Br
           </div>
 
           <h2 className="text-2xl sm:text-3xl font-extrabold text-gray-900 mb-5">
-            Serwis {devicePlural} {brand.name} z dojazdem do Klienta
+            Serwis {devicePlural} {brand.name} na Podkarpaciu
           </h2>
           <p className="text-gray-600 leading-relaxed mb-4">
-            Serwisuję {devicePlural} {brand.name} na terenie całego Podkarpacia — m.in.:{' '}
-            {SERVICE_AREA_CITIES}. W wielu przypadkach naprawę wykonuję bezpośrednio u
-            Klienta; przy poważniejszych usterkach odbieram sprzęt do serwisu i zapewniam
-            urządzenie zastępcze na czas naprawy.
+            Serwisuję {devicePlural} {brand.name} na terenie całego Podkarpacia, m.in.:{' '}
+            {SERVICE_AREA_CITIES}. Naprawę wykonuję przede wszystkim w serwisie, a dojazd
+            do Klienta lub odbiór sprzętu jest możliwy w miarę możliwości, po wcześniejszym
+            uzgodnieniu. Na czas naprawy zapewniam urządzenie zastępcze.
           </p>
           <ul className="space-y-3 mb-12">
             {[
-              `naprawy gwarancyjne i pogwarancyjne ${devicePlural} ${brand.name},`,
+              `pogwarancyjne naprawy ${devicePlural} ${brand.name},`,
               'szybka diagnostyka i reakcja na zgłoszenie serwisowe,',
-              'części zamienne i materiały eksploatacyjne dostępne od ręki,',
+              'pomoc w doborze i zamówieniu części zamiennych oraz materiałów eksploatacyjnych,',
               'gwarancja na każdą wykonaną naprawę.',
             ].map((item) => (
               <li key={item} className="flex items-start gap-3 text-gray-700">
@@ -167,7 +167,7 @@ export default function BrandPage({ kind, brand }: { kind: SerwisKind; brand: Br
             Twoja {deviceNominative} {brand.name} nie działa?
           </h2>
           <p className="text-blue-100 text-lg mb-8">
-            Zadzwoń teraz lub wyślij zgłoszenie — bezpłatna diagnostyka i uczciwa wycena.
+            Zadzwoń teraz lub wyślij zgłoszenie. Bezpłatna diagnostyka i uczciwa wycena.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <a

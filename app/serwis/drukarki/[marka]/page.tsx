@@ -16,8 +16,8 @@ export async function generateMetadata({
   const brand = PRINTER_BRANDS.find((b) => b.slug === marka)
   if (!brand) return {}
   return {
-    title: `Serwis drukarek ${brand.name} — naprawa i konserwacja`,
-    description: `Profesjonalny serwis drukarek ${brand.name}: naprawy gwarancyjne i pogwarancyjne, bezpłatna diagnostyka, części zamienne, dojazd do klienta. Łańcut, Rzeszów i całe Podkarpacie.`,
+    title: `Serwis drukarek ${brand.name}, naprawa i konserwacja`,
+    description: `Profesjonalny pogwarancyjny serwis drukarek ${brand.name}: naprawy, bezpłatna diagnostyka, pomoc w doborze części zamiennych. Łańcut, Rzeszów i całe Podkarpacie.`,
     alternates: { canonical: `https://www.tsdruk.pl/serwis/drukarki/${brand.slug}` },
   }
 }

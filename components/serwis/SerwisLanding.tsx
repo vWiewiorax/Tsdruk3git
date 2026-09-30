@@ -168,7 +168,7 @@ export default function SerwisLanding({ config }: { config: SerwisConfig }) {
             Oddaj sprzęt w ręce specjalisty
           </h2>
           <p className="text-blue-100 text-lg mb-8">
-            Zadzwoń teraz lub wyślij zgłoszenie — bezpłatna diagnostyka i uczciwa wycena.
+            Zadzwoń teraz lub wyślij zgłoszenie. Bezpłatna diagnostyka i uczciwa wycena.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <a

@@ -53,15 +53,15 @@ const services = [
   },
   {
     icon: <Shield className="w-8 h-8" />,
-    title: 'Serwis gwarancyjny i pogwarancyjny',
+    title: 'Serwis pogwarancyjny',
     description:
-      'Realizuję naprawy gwarancyjne oraz udzielam własnej gwarancji na każdą wykonaną przeze mnie naprawę.',
+      'Wykonuję naprawy pogwarancyjne i udzielam własnej gwarancji na każdą wykonaną przeze mnie naprawę.',
   },
   {
     icon: <Award className="w-8 h-8" />,
     title: 'Dojazd do klienta',
     description:
-      'Mogę przyjechać do Ciebie, odebrać drukarkę, naprawić ją i dostarczyć z powrotem — bez wychodzenia z domu czy biura.',
+      'Po wcześniejszym uzgodnieniu mogę odebrać drukarkę, naprawić ją i dostarczyć z powrotem.',
   },
   {
     icon: <CheckCircle className="w-8 h-8" />,
@@ -78,7 +78,7 @@ const pricing = [
   { service: 'Czyszczenie głowicy drukującej', price: 'od 50 zł', highlight: false },
   { service: 'Wymiana bębna / wałka podającego', price: 'od 60 zł', highlight: false },
   { service: 'Przegląd prewencyjny + czyszczenie', price: 'od 70 zł', highlight: false },
-  { service: 'Dojazd do klienta', price: 'od 30 zł', highlight: false },
+  { service: 'Dojazd do klienta (po uzgodnieniu)', price: 'od 30 zł', highlight: false },
   { service: 'Konfiguracja sieciowa / instalacja', price: 'od 50 zł', highlight: false },
 ]
 
@@ -391,7 +391,7 @@ const handleSubmit = async (e: React.FormEvent) => {
             </p>
             <p className="text-gray-600 mb-7 leading-relaxed reveal reveal-delay-2">
               Każdą naprawę zaczynam od bezpłatnej diagnostyki. Dopiero po
-              jej wykonaniu przedstawiam dokładną wycenę — bez ukrytych kosztów.
+              jej wykonaniu przedstawiam dokładną wycenę, bez ukrytych kosztów.
               Na każdą wykonaną naprawę udzielam własnej gwarancji.
             </p>
             <ul className="space-y-3 mb-8 reveal reveal-delay-3">
@@ -399,7 +399,7 @@ const handleSubmit = async (e: React.FormEvent) => {
                 'Obsługuję wszystkie marki: HP, Canon, Epson, Brother, Samsung i inne',
                 'Ponad 20 lat doświadczenia w serwisie drukarek',
                 'Używam części zamiennych i materiałów eksploatacyjnych',
-                'Naprawiam na miejscu lub odbieram i dostarczam sprzęt do klienta',
+                'Naprawiam w serwisie lub na miejscu u klienta po wcześniejszym uzgodnieniu',
               ].map((item) => (
                 <li key={item} className="flex items-start gap-3 text-gray-700">
                   <CheckCircle className="w-5 h-5 text-blue-600 shrink-0 mt-0.5" />
@@ -496,7 +496,7 @@ const handleSubmit = async (e: React.FormEvent) => {
           </div>
           <p className="text-center text-gray-400 text-sm mt-6 reveal reveal-delay-2">
             * Ceny mogą różnić się w zależności od stopnia uszkodzenia i modelu urządzenia.
-            Ostateczna wycena po diagnostyce — zawsze przed przystąpieniem do naprawy.
+            Ostateczna wycena po diagnostyce, zawsze przed przystąpieniem do naprawy.
           </p>
         </div>
       </section>
@@ -619,7 +619,7 @@ const handleSubmit = async (e: React.FormEvent) => {
             Naprawię Twoją drukarkę już w 24h
           </h2>
           <p className="text-blue-100 text-lg mb-8">
-            Zadzwoń teraz lub wyślij zgłoszenie — bezpłatna diagnostyka i uczciwa wycena.
+            Zadzwoń teraz lub wyślij zgłoszenie. Bezpłatna diagnostyka i uczciwa wycena.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <a
@@ -812,7 +812,7 @@ const handleSubmit = async (e: React.FormEvent) => {
                         <p className="text-xs">
                           <span className="font-semibold text-blue-600">Kliknij</span> lub przeciągnij pliki tutaj
                         </p>
-                        <p className="text-xs text-gray-300">JPG, PNG, PDF, DOC — maks. 5 plików</p>
+                        <p className="text-xs text-gray-300">JPG, PNG, PDF, DOC, maks. 5 plików</p>
                       </div>
                     </div>
                     {files.length > 0 && (

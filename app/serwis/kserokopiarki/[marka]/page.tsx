@@ -16,8 +16,8 @@ export async function generateMetadata({
   const brand = COPIER_BRANDS.find((b) => b.slug === marka)
   if (!brand) return {}
   return {
-    title: `Serwis kserokopiarek ${brand.name} — naprawa i konserwacja`,
-    description: `Profesjonalny serwis kserokopiarek ${brand.name}: naprawy gwarancyjne i pogwarancyjne, konserwacje, regulacja podzespołów, sprzęt zastępczy. Łańcut, Rzeszów i całe Podkarpacie.`,
+    title: `Serwis kserokopiarek ${brand.name}, naprawa i konserwacja`,
+    description: `Profesjonalny pogwarancyjny serwis kserokopiarek ${brand.name}: naprawy, konserwacje, regulacja podzespołów, sprzęt zastępczy. Łańcut, Rzeszów i całe Podkarpacie.`,
     alternates: { canonical: `https://www.tsdruk.pl/serwis/kserokopiarki/${brand.slug}` },
   }
 }

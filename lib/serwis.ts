@@ -80,44 +80,44 @@ export const SERWIS_DRUKARKI: SerwisConfig = {
   badge: 'Serwis drukarek',
   title: 'Serwis drukarek',
   subtitle:
-    'Naprawa, konserwacja i przeglądy drukarek wszystkich marek — gwarancyjnie i pogwarancyjnie. Szybka diagnostyka, naprawa na miejscu lub z dojazdem do Klienta.',
+    'Pogwarancyjna naprawa, konserwacja i przeglądy drukarek wszystkich marek. Szybka diagnostyka i naprawa w serwisie.',
   benefitsTitle: 'Naszym klientom zapewniam:',
   benefits: [
-    'profesjonalny serwis gwarancyjny oraz pogwarancyjny drukarek,',
+    'profesjonalny serwis pogwarancyjny drukarek,',
     'przeglądy okresowe i konserwacje,',
     'szybki czas reakcji na zgłoszenie serwisowe oraz krótki czas realizacji,',
-    'naprawy na miejscu u Klienta lub w serwisie,',
+    'naprawy w serwisie lub na miejscu u Klienta po wcześniejszym uzgodnieniu,',
     'urządzenie zastępcze na czas naprawy,',
     'pomoc i szkolenie w zakresie obsługi sprzętu,',
     'wyjątkowo atrakcyjne ceny w przypadku stałych umów serwisowych oraz stałej współpracy,',
     'doradztwo oraz pomoc w zakresie zakupu nowego sprzętu,',
-    'ciągły dostęp do części zamiennych oraz materiałów eksploatacyjnych.',
+    'pomoc w doborze i zamówieniu części zamiennych oraz materiałów eksploatacyjnych.',
   ],
   sections: [
     {
       heading: 'Profesjonalny serwis drukarek, skanerów i urządzeń wielofunkcyjnych',
       paragraphs: [
-        'Jeśli szukasz sprawdzonego i szybkiego serwisu drukarek w okolicy, dobrze trafiłeś. Oferuję pełną obsługę serwisową obejmującą zarówno naprawy gwarancyjne, jak i pogwarancyjne, konserwacje oraz przeglądy techniczne. Serwisuję drukarki atramentowe i laserowe, kserokopiarki, urządzenia wielofunkcyjne oraz skanery. Mocną stroną jest szybka reakcja na zgłoszenie — w wielu przypadkach jestem w stanie naprawić urządzenie bezpośrednio u Klienta. W razie poważniejszych usterek odbieram sprzęt do serwisu, zapewniając jednocześnie urządzenie zastępcze na czas naprawy.',
+        'Jeśli szukasz sprawdzonego i szybkiego serwisu drukarek w okolicy, dobrze trafiłeś. Oferuję pełną pogwarancyjną obsługę serwisową obejmującą naprawy, konserwacje oraz przeglądy techniczne. Serwisuję drukarki atramentowe i laserowe, kserokopiarki, urządzenia wielofunkcyjne oraz skanery. Mocną stroną jest szybka reakcja na zgłoszenie, a naprawę wykonuję przede wszystkim w serwisie. W razie potrzeby odbieram sprzęt od Klienta po wcześniejszym uzgodnieniu i zapewniam urządzenie zastępcze na czas naprawy.',
       ],
     },
     {
       heading: 'Dlaczego warto wybrać mój serwis drukarek?',
       paragraphs: [
-        'Moi Klienci mogą liczyć na fachową diagnozę, sprawną naprawę i stały dostęp do części zamiennych oraz materiałów eksploatacyjnych. Dzięki dużemu doświadczeniu zespołu oraz nowoczesnym narzędziom serwisowym skutecznie eliminuję każdą usterkę — od drobnych awarii po skomplikowane uszkodzenia podzespołów. Regularnie wykonuję przeglądy i konserwacje, które znacząco przedłużają żywotność sprzętu biurowego i minimalizują ryzyko kosztownych napraw. Klienci biznesowi mogą liczyć na atrakcyjne warunki stałej współpracy oraz priorytetową obsługę.',
+        'Moi Klienci mogą liczyć na fachową diagnozę, sprawną naprawę i pomoc w doborze części zamiennych oraz materiałów eksploatacyjnych. Dzięki dużemu doświadczeniu oraz nowoczesnym narzędziom serwisowym skutecznie eliminuję każdą usterkę, od drobnych awarii po skomplikowane uszkodzenia podzespołów. Regularnie wykonuję przeglądy i konserwacje, które znacząco przedłużają żywotność sprzętu biurowego i minimalizują ryzyko kosztownych napraw. Klienci biznesowi mogą liczyć na atrakcyjne warunki stałej współpracy oraz priorytetową obsługę.',
       ],
     },
     {
-      heading: 'Serwis drukarek Łańcut, Rzeszów i okolice — szybki dojazd do Klienta',
+      heading: 'Serwis drukarek Łańcut, Rzeszów i okolice',
       paragraphs: [
-        'Serwis mieści się w Krzemienicy koło Łańcuta — dogodny dojazd sprawia, że oddanie sprzętu do serwisu jest wyjątkowo wygodne. Obsługuję jednak nie tylko najbliższą okolicę, ale także całe Podkarpacie, m.in.: Rzeszów, Łańcut, Przeworsk, Jarosław, Przemyśl, Leżajsk, Lubaczów, Nowa Dęba, Mielec, Tarnobrzeg, Dębica, Ropczyce, Kolbuszowa i Brzostek. Regularnie dojeżdżam do Klientów, co pozwala na szybką reakcję i oszczędność czasu.',
+        'Serwis mieści się w Krzemienicy koło Łańcuta, a dogodny dojazd sprawia, że oddanie sprzętu do serwisu jest wyjątkowo wygodne. Obsługuję jednak nie tylko najbliższą okolicę, ale także całe Podkarpacie, m.in.: Rzeszów, Łańcut, Przeworsk, Jarosław, Przemyśl, Leżajsk, Lubaczów, Nowa Dęba, Mielec, Tarnobrzeg, Dębica, Ropczyce, Kolbuszowa i Brzostek. Dojazd do Klienta jest możliwy w miarę możliwości, po wcześniejszym uzgodnieniu.',
       ],
     },
   ],
   offerTitle: 'Co zyskujesz, wybierając mój serwis drukarek?',
   offerList: [
-    'Naprawy gwarancyjne i pogwarancyjne drukarek, skanerów, kopiarek i urządzeń wielofunkcyjnych.',
+    'Pogwarancyjne naprawy drukarek, skanerów, kopiarek i urządzeń wielofunkcyjnych.',
     'Szybką diagnostykę i natychmiastową reakcję na zgłoszenie serwisowe.',
-    'Naprawy na miejscu lub w serwisie, sprzęt zastępczy na czas naprawy.',
+    'Naprawy w serwisie lub na miejscu po uzgodnieniu, sprzęt zastępczy na czas naprawy.',
     'Doradztwo w zakresie obsługi i zakupu nowego sprzętu biurowego.',
     'Atrakcyjne warunki przy stałej współpracy i umowach serwisowych.',
   ],
@@ -127,9 +127,9 @@ export const SERWIS_DRUKARKI: SerwisConfig = {
     'Serwis drukarek TSdruk to gwarancja jakości, terminowości i profesjonalnego podejścia. Każde zgłoszenie traktuję priorytetowo, a moim celem jest zapewnienie Klientom komfortu pracy i pełnej sprawności urządzeń biurowych. Dzięki doświadczeniu i indywidualnemu podejściu pomagam nie tylko w naprawach, ale również w wyborze optymalnych rozwiązań dla firm i użytkowników prywatnych.',
   ],
   brandsTitle: 'Zajmuję się także serwisem drukarek producentów:',
-  metaTitle: 'Serwis drukarek — naprawa gwarancyjna i pogwarancyjna | Łańcut, Rzeszów',
+  metaTitle: 'Serwis drukarek, naprawa pogwarancyjna | Łańcut, Rzeszów',
   metaDescription:
-    'Profesjonalny serwis drukarek atramentowych i laserowych: naprawy gwarancyjne i pogwarancyjne, przeglądy, konserwacje, dojazd do klienta. HP, Canon, Epson, Brother, Kyocera, Ricoh i inne marki. Łańcut, Rzeszów i całe Podkarpacie.',
+    'Profesjonalny pogwarancyjny serwis drukarek atramentowych i laserowych: naprawy, przeglądy, konserwacje, możliwy dojazd do klienta po uzgodnieniu. HP, Canon, Epson, Brother, Kyocera, Ricoh i inne marki. Łańcut, Rzeszów i całe Podkarpacie.',
 }
 
 export const SERWIS_KSEROKOPIARKI: SerwisConfig = {
@@ -137,24 +137,24 @@ export const SERWIS_KSEROKOPIARKI: SerwisConfig = {
   badge: 'Serwis kserokopiarek',
   title: 'Serwis kserokopiarek',
   subtitle:
-    'Naprawa, konserwacja i wsparcie techniczne kserokopiarek oraz urządzeń wielofunkcyjnych — dla firm, instytucji i klientów indywidualnych.',
+    'Pogwarancyjna naprawa, konserwacja i wsparcie techniczne kserokopiarek oraz urządzeń wielofunkcyjnych dla firm, instytucji i klientów indywidualnych.',
   benefitsTitle: 'Naszym klientom zapewniam:',
   benefits: [
-    'profesjonalny serwis gwarancyjny oraz pogwarancyjny kserokopiarek,',
+    'profesjonalny serwis pogwarancyjny kserokopiarek,',
     'przeglądy okresowe i konserwacje urządzeń,',
     'szybki czas reakcji na zgłoszenie serwisowe oraz krótkie terminy realizacji,',
-    'naprawy na miejscu u Klienta lub w serwisie,',
+    'naprawy w serwisie lub na miejscu u Klienta po wcześniejszym uzgodnieniu,',
     'urządzenie zastępcze na czas naprawy,',
     'pomoc i szkolenie w zakresie obsługi kserokopiarek,',
     'wyjątkowo atrakcyjne ceny w przypadku stałych umów serwisowych oraz długofalowej współpracy,',
     'doradztwo oraz pomoc w zakresie zakupu nowego sprzętu biurowego,',
-    'stały dostęp do części zamiennych oraz materiałów eksploatacyjnych do każdej kserokopiarki.',
+    'pomoc w doborze i zamówieniu części zamiennych oraz materiałów eksploatacyjnych do każdej kserokopiarki.',
   ],
   sections: [
     {
-      heading: 'Serwis kserokopiarek — naprawa, konserwacja i wsparcie techniczne',
+      heading: 'Serwis kserokopiarek, naprawa, konserwacja i wsparcie techniczne',
       paragraphs: [
-        'Mój serwis kserokopiarek oferuje pełną obsługę urządzeń biurowych — zarówno gwarancyjną, jak i pogwarancyjną. Zajmuję się naprawą, przeglądami oraz konserwacją sprzętu, co pozwala utrzymać go w doskonałej kondycji i uniknąć kosztownych awarii. Obsługuję nowoczesne urządzenia cyfrowe, a także starsze modele kserokopiarek, zapewniając pełną funkcjonalność w codziennej pracy biura. Moim priorytetem jest szybka reakcja na zgłoszenie serwisowe — w wielu przypadkach naprawę realizuję bezpośrednio w siedzibie Klienta. W razie poważniejszych usterek zapewniam transport sprzętu do serwisu oraz urządzenie zastępcze.',
+        'Mój serwis kserokopiarek oferuje pełną pogwarancyjną obsługę urządzeń biurowych. Zajmuję się naprawą, przeglądami oraz konserwacją sprzętu, co pozwala utrzymać go w doskonałej kondycji i uniknąć kosztownych awarii. Obsługuję nowoczesne urządzenia cyfrowe, a także starsze modele kserokopiarek, zapewniając pełną funkcjonalność w codziennej pracy biura. Moim priorytetem jest szybka reakcja na zgłoszenie serwisowe. Naprawę realizuję w serwisie, a w razie potrzeby, po wcześniejszym uzgodnieniu, odbieram sprzęt od Klienta i zapewniam urządzenie zastępcze.',
       ],
     },
     {
@@ -166,13 +166,13 @@ export const SERWIS_KSEROKOPIARKI: SerwisConfig = {
     {
       heading: 'Serwis kserokopiarek Łańcut, Rzeszów i obsługa okolicznych miast',
       paragraphs: [
-        'Siedziba serwisu znajduje się w Krzemienicy koło Łańcuta — dogodny dojazd ułatwia przekazanie sprzętu. Obsługuję jednak nie tylko najbliższą okolicę, ale także całe Podkarpacie, m.in.: Rzeszów, Łańcut, Przeworsk, Jarosław, Przemyśl, Leżajsk, Lubaczów, Nowa Dęba, Mielec, Tarnobrzeg, Dębica, Ropczyce, Kolbuszowa i Brzostek. Dojeżdżam do Klientów, dzięki czemu naprawy przebiegają sprawnie i bez zbędnych opóźnień.',
+        'Siedziba serwisu znajduje się w Krzemienicy koło Łańcuta, a dogodny dojazd ułatwia przekazanie sprzętu. Obsługuję jednak nie tylko najbliższą okolicę, ale także całe Podkarpacie, m.in.: Rzeszów, Łańcut, Przeworsk, Jarosław, Przemyśl, Leżajsk, Lubaczów, Nowa Dęba, Mielec, Tarnobrzeg, Dębica, Ropczyce, Kolbuszowa i Brzostek. Dojazd do Klienta jest możliwy w miarę możliwości, po wcześniejszym uzgodnieniu.',
       ],
     },
   ],
   offerTitle: 'Moja oferta serwisowa obejmuje:',
   offerList: [
-    'Naprawy gwarancyjne i pogwarancyjne kserokopiarek oraz urządzeń wielofunkcyjnych.',
+    'Pogwarancyjne naprawy kserokopiarek oraz urządzeń wielofunkcyjnych.',
     'Szybką diagnostykę i natychmiastową reakcję na zgłoszenia.',
     'Konserwacje, czyszczenie i regulację podzespołów.',
     'Montaż i wymianę części zamiennych oraz materiałów eksploatacyjnych.',
@@ -184,13 +184,13 @@ export const SERWIS_KSEROKOPIARKI: SerwisConfig = {
     'Naprawiam i konserwuję kserokopiarki firm: Canon, Konica Minolta, Sharp, Kyocera, HP, Ricoh, Lexmark, Xerox, Triumph-Adler, Brother.',
   trustHeading: 'Profesjonalizm i partnerskie podejście do Klienta',
   trustParagraphs: [
-    'Serwis kserokopiarek TSdruk to gwarancja rzetelności, terminowości i fachowej pomocy. Zajmuję się serwisowaniem urządzeń biurowych od ponad 20 lat i nieustannie podnoszę swoje kwalifikacje, aby sprostać wymaganiom rynku i nowoczesnych technologii biurowych. Zaufanie Klientów to dla mnie priorytet — dlatego dbam nie tylko o skuteczną naprawę, ale również o doradztwo w wyborze najlepszych rozwiązań sprzętowych. Dzięki temu Twoje biuro może działać sprawnie i bez zakłóceń.',
-    'Mój profesjonalny serwis kserokopiarek obsługuje urządzenia wielu znanych producentów, zapewniając kompleksową naprawę, konserwację i pełne wsparcie techniczne. Dzięki wieloletniemu doświadczeniu i szerokiemu dostępowi do części zamiennych skutecznie serwisuję zarówno najnowsze modele, jak i starsze urządzenia, dbając o ich niezawodność i długą żywotność. Poniżej przedstawiam listę marek kserokopiarek, które naprawiam w ramach mojej oferty.',
+    'Serwis kserokopiarek TSdruk to gwarancja rzetelności, terminowości i fachowej pomocy. Zajmuję się serwisowaniem urządzeń biurowych od ponad 20 lat i nieustannie podnoszę swoje kwalifikacje, aby sprostać wymaganiom rynku i nowoczesnych technologii biurowych. Zaufanie Klientów to dla mnie priorytet, dlatego dbam nie tylko o skuteczną naprawę, ale również o doradztwo w wyborze najlepszych rozwiązań sprzętowych. Dzięki temu Twoje biuro może działać sprawnie i bez zakłóceń.',
+    'Mój profesjonalny serwis kserokopiarek obsługuje urządzenia wielu znanych producentów, zapewniając kompleksową naprawę, konserwację i pełne wsparcie techniczne. Dzięki wieloletniemu doświadczeniu skutecznie serwisuję zarówno najnowsze modele, jak i starsze urządzenia, dbając o ich niezawodność i długą żywotność. Poniżej przedstawiam listę marek kserokopiarek, które naprawiam w ramach mojej oferty.',
   ],
   brandsTitle: 'Serwisuję kserokopiarki producentów:',
-  metaTitle: 'Serwis kserokopiarek — naprawa, konserwacja, wsparcie techniczne | Łańcut, Rzeszów',
+  metaTitle: 'Serwis kserokopiarek, naprawa, konserwacja, wsparcie | Łańcut, Rzeszów',
   metaDescription:
-    'Kompleksowy serwis kserokopiarek dla firm i instytucji: naprawy gwarancyjne i pogwarancyjne, przeglądy, konserwacje, części zamienne, sprzęt zastępczy. Canon, Konica Minolta, Sharp, Kyocera, Ricoh i inne. Łańcut, Rzeszów, Podkarpacie.',
+    'Kompleksowy pogwarancyjny serwis kserokopiarek dla firm i instytucji: naprawy, przeglądy, konserwacje, wymiana części, sprzęt zastępczy. Canon, Konica Minolta, Sharp, Kyocera, Ricoh i inne. Łańcut, Rzeszów, Podkarpacie.',
 }
 
 export const PRINTER_BRAND_ISSUES = [

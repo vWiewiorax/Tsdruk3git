@@ -7,9 +7,9 @@ import { PHONE } from '@/lib/site'
 import { SERWIS_KINDS } from '@/lib/serwis'
 
 export const metadata: Metadata = {
-  title: 'Serwis — drukarki i kserokopiarki | Łańcut, Rzeszów',
+  title: 'Serwis drukarek i kserokopiarek | Łańcut, Rzeszów',
   description:
-    'Kompleksowy serwis sprzętu biurowego: naprawa i konserwacja drukarek oraz kserokopiarek wszystkich marek. Gwarancyjnie i pogwarancyjnie, z dojazdem do klienta. Łańcut, Rzeszów, Podkarpacie.',
+    'Kompleksowy pogwarancyjny serwis sprzętu biurowego: naprawa i konserwacja drukarek oraz kserokopiarek wszystkich marek. Łańcut, Rzeszów, Podkarpacie.',
   alternates: { canonical: 'https://www.tsdruk.pl/serwis' },
 }
 
@@ -29,8 +29,8 @@ export default function SerwisPage() {
             Serwis drukarek i kserokopiarek
           </h1>
           <p className="text-gray-600 text-lg leading-relaxed max-w-2xl mb-8">
-            Naprawa, konserwacja i przeglądy sprzętu biurowego — gwarancyjnie i
-            pogwarancyjnie. Wybierz rodzaj urządzenia i poznaj pełną ofertę serwisową.
+            Pogwarancyjna naprawa, konserwacja i przeglądy sprzętu biurowego.
+            Wybierz rodzaj urządzenia i poznaj pełną ofertę serwisową.
           </p>
         </div>
       </section>
@@ -82,7 +82,7 @@ export default function SerwisPage() {
             Potrzebujesz naprawy już teraz?
           </h2>
           <p className="text-blue-100 text-lg mb-8">
-            Zadzwoń teraz lub wyślij zgłoszenie — bezpłatna diagnostyka i uczciwa wycena.
+            Zadzwoń teraz lub wyślij zgłoszenie. Bezpłatna diagnostyka i uczciwa wycena.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <a

@@ -5,20 +5,7 @@ import SiteFooter from '@/components/SiteFooter'
 import { PHONE } from '@/lib/site'
 import { SERWIS_KINDS, type SerwisConfig } from '@/lib/serwis'
 
-const IMAGES: Record<SerwisConfig['kind'], { src: string; alt: string }[]> = {
-  drukarki: [
-    { src: '/gallery/canon.webp', alt: 'Drukarka Canon w serwisie' },
-    { src: '/gallery/hp.webp', alt: 'Drukarka HP w serwisie' },
-  ],
-  kserokopiarki: [
-    { src: '/gallery/konica.jpg', alt: 'Kserokopiarka Konica Minolta w serwisie' },
-    { src: '/gallery/ricoh.jpg', alt: 'Kserokopiarka Ricoh w serwisie' },
-  ],
-}
-
 export default function SerwisLanding({ config }: { config: SerwisConfig }) {
-  const images = IMAGES[config.kind]
-
   return (
     <div className="font-sans text-gray-800 bg-white">
       <SiteNav />
@@ -56,22 +43,7 @@ export default function SerwisLanding({ config }: { config: SerwisConfig }) {
 
       {/* BENEFITS */}
       <section className="py-16 bg-white">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-12 items-start">
-          <div className="grid gap-6">
-            {images.map((img) => (
-              <div
-                key={img.src}
-                className="rounded-3xl overflow-hidden border border-gray-100 shadow-lg h-56 bg-gray-100"
-              >
-                <img
-                  src={img.src}
-                  alt={img.alt}
-                  loading="lazy"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            ))}
-          </div>
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div>
             <h2 className="text-2xl sm:text-3xl font-extrabold text-gray-900 mb-7">
               {config.benefitsTitle}

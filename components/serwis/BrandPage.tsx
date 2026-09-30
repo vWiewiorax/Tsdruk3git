@@ -125,7 +125,7 @@ export default function BrandPage({ kind, brand }: { kind: SerwisKind; brand: Br
             Serwisuję {devicePlural} {brand.name} na terenie całego Podkarpacia, m.in.:{' '}
             {SERVICE_AREA_CITIES}. Naprawę wykonuję przede wszystkim w serwisie, a dojazd
             do Klienta lub odbiór sprzętu jest możliwy w miarę możliwości, po wcześniejszym
-            uzgodnieniu. Na czas naprawy zapewniam urządzenie zastępcze.
+            uzgodnieniu.
           </p>
           <ul className="space-y-3 mb-12">
             {[

@@ -87,7 +87,6 @@ export const SERWIS_DRUKARKI: SerwisConfig = {
     'przeglądy okresowe i konserwacje,',
     'szybki czas reakcji na zgłoszenie serwisowe oraz krótki czas realizacji,',
     'naprawy w serwisie lub na miejscu u Klienta po wcześniejszym uzgodnieniu,',
-    'urządzenie zastępcze na czas naprawy,',
     'pomoc i szkolenie w zakresie obsługi sprzętu,',
     'wyjątkowo atrakcyjne ceny w przypadku stałych umów serwisowych oraz stałej współpracy,',
     'doradztwo oraz pomoc w zakresie zakupu nowego sprzętu,',
@@ -97,7 +96,7 @@ export const SERWIS_DRUKARKI: SerwisConfig = {
     {
       heading: 'Profesjonalny serwis drukarek, skanerów i urządzeń wielofunkcyjnych',
       paragraphs: [
-        'Jeśli szukasz sprawdzonego i szybkiego serwisu drukarek w okolicy, dobrze trafiłeś. Oferuję pełną pogwarancyjną obsługę serwisową obejmującą naprawy, konserwacje oraz przeglądy techniczne. Serwisuję drukarki atramentowe i laserowe, kserokopiarki, urządzenia wielofunkcyjne oraz skanery. Mocną stroną jest szybka reakcja na zgłoszenie, a naprawę wykonuję przede wszystkim w serwisie. W razie potrzeby odbieram sprzęt od Klienta po wcześniejszym uzgodnieniu i zapewniam urządzenie zastępcze na czas naprawy.',
+        'Jeśli szukasz sprawdzonego i szybkiego serwisu drukarek w okolicy, dobrze trafiłeś. Oferuję pełną pogwarancyjną obsługę serwisową obejmującą naprawy, konserwacje oraz przeglądy techniczne. Serwisuję drukarki atramentowe i laserowe, kserokopiarki, urządzenia wielofunkcyjne oraz skanery. Mocną stroną jest szybka reakcja na zgłoszenie, a naprawę wykonuję przede wszystkim w serwisie. W razie potrzeby odbieram sprzęt od Klienta po wcześniejszym uzgodnieniu.',
       ],
     },
     {
@@ -117,7 +116,7 @@ export const SERWIS_DRUKARKI: SerwisConfig = {
   offerList: [
     'Pogwarancyjne naprawy drukarek, skanerów, kopiarek i urządzeń wielofunkcyjnych.',
     'Szybką diagnostykę i natychmiastową reakcję na zgłoszenie serwisowe.',
-    'Naprawy w serwisie lub na miejscu po uzgodnieniu, sprzęt zastępczy na czas naprawy.',
+    'Naprawy w serwisie lub na miejscu po wcześniejszym uzgodnieniu.',
     'Doradztwo w zakresie obsługi i zakupu nowego sprzętu biurowego.',
     'Atrakcyjne warunki przy stałej współpracy i umowach serwisowych.',
   ],
@@ -144,7 +143,6 @@ export const SERWIS_KSEROKOPIARKI: SerwisConfig = {
     'przeglądy okresowe i konserwacje urządzeń,',
     'szybki czas reakcji na zgłoszenie serwisowe oraz krótkie terminy realizacji,',
     'naprawy w serwisie lub na miejscu u Klienta po wcześniejszym uzgodnieniu,',
-    'urządzenie zastępcze na czas naprawy,',
     'pomoc i szkolenie w zakresie obsługi kserokopiarek,',
     'wyjątkowo atrakcyjne ceny w przypadku stałych umów serwisowych oraz długofalowej współpracy,',
     'doradztwo oraz pomoc w zakresie zakupu nowego sprzętu biurowego,',
@@ -154,7 +152,7 @@ export const SERWIS_KSEROKOPIARKI: SerwisConfig = {
     {
       heading: 'Serwis kserokopiarek, naprawa, konserwacja i wsparcie techniczne',
       paragraphs: [
-        'Mój serwis kserokopiarek oferuje pełną pogwarancyjną obsługę urządzeń biurowych. Zajmuję się naprawą, przeglądami oraz konserwacją sprzętu, co pozwala utrzymać go w doskonałej kondycji i uniknąć kosztownych awarii. Obsługuję nowoczesne urządzenia cyfrowe, a także starsze modele kserokopiarek, zapewniając pełną funkcjonalność w codziennej pracy biura. Moim priorytetem jest szybka reakcja na zgłoszenie serwisowe. Naprawę realizuję w serwisie, a w razie potrzeby, po wcześniejszym uzgodnieniu, odbieram sprzęt od Klienta i zapewniam urządzenie zastępcze.',
+        'Mój serwis kserokopiarek oferuje pełną pogwarancyjną obsługę urządzeń biurowych. Zajmuję się naprawą, przeglądami oraz konserwacją sprzętu, co pozwala utrzymać go w doskonałej kondycji i uniknąć kosztownych awarii. Obsługuję nowoczesne urządzenia cyfrowe, a także starsze modele kserokopiarek, zapewniając pełną funkcjonalność w codziennej pracy biura. Moim priorytetem jest szybka reakcja na zgłoszenie serwisowe. Naprawę realizuję w serwisie, a w razie potrzeby, po wcześniejszym uzgodnieniu, odbieram sprzęt od Klienta.',
       ],
     },
     {
@@ -176,7 +174,6 @@ export const SERWIS_KSEROKOPIARKI: SerwisConfig = {
     'Szybką diagnostykę i natychmiastową reakcję na zgłoszenia.',
     'Konserwacje, czyszczenie i regulację podzespołów.',
     'Montaż i wymianę części zamiennych oraz materiałów eksploatacyjnych.',
-    'Sprzęt zastępczy na czas naprawy.',
     'Profesjonalne doradztwo i szkolenia w zakresie obsługi urządzeń.',
     'Atrakcyjne warunki cenowe dla Klientów ze stałą umową serwisową.',
   ],
@@ -190,7 +187,7 @@ export const SERWIS_KSEROKOPIARKI: SerwisConfig = {
   brandsTitle: 'Serwisuję kserokopiarki producentów:',
   metaTitle: 'Serwis kserokopiarek, naprawa, konserwacja, wsparcie | Łańcut, Rzeszów',
   metaDescription:
-    'Kompleksowy pogwarancyjny serwis kserokopiarek dla firm i instytucji: naprawy, przeglądy, konserwacje, wymiana części, sprzęt zastępczy. Canon, Konica Minolta, Sharp, Kyocera, Ricoh i inne. Łańcut, Rzeszów, Podkarpacie.',
+    'Kompleksowy pogwarancyjny serwis kserokopiarek dla firm i instytucji: naprawy, przeglądy, konserwacje, wymiana części zamiennych. Canon, Konica Minolta, Sharp, Kyocera, Ricoh i inne. Łańcut, Rzeszów, Podkarpacie.',
 }
 
 export const PRINTER_BRAND_ISSUES = [

@@ -17,7 +17,7 @@ export async function generateMetadata({
   if (!brand) return {}
   return {
     title: `Serwis kserokopiarek ${brand.name}, naprawa i konserwacja`,
-    description: `Profesjonalny pogwarancyjny serwis kserokopiarek ${brand.name}: naprawy, konserwacje, regulacja podzespołów, sprzęt zastępczy. Łańcut, Rzeszów i całe Podkarpacie.`,
+    description: `Profesjonalny pogwarancyjny serwis kserokopiarek ${brand.name}: naprawy, konserwacje, regulacja podzespołów. Łańcut, Rzeszów i całe Podkarpacie.`,
     alternates: { canonical: `https://www.tsdruk.pl/serwis/kserokopiarki/${brand.slug}` },
   }
 }

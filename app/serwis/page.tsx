@@ -43,7 +43,7 @@ export default function SerwisPage() {
               href: '/serwis/drukarki',
               icon: <Printer className="w-9 h-9" />,
               title: 'Serwis drukarek',
-              desc: 'Naprawa drukarek atramentowych i laserowych, urządzeń wielofunkcyjnych i skanerów. Przeglądy, konserwacje, urządzenie zastępcze.',
+              desc: 'Naprawa drukarek atramentowych i laserowych, urządzeń wielofunkcyjnych i skanerów. Przeglądy i konserwacje.',
               count: SERWIS_KINDS.drukarki.brands.length,
             },
             {

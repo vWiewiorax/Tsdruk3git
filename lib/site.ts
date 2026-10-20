@@ -1,5 +1,3 @@
-import { PRINTER_BRANDS, COPIER_BRANDS } from './serwis'
-
 export const COMPANY_NAME = 'TSdruk'
 export const PHONE = '796 584 933'
 export const EMAIL = 'tomasz.strzepka@gmail.com'
@@ -19,31 +17,13 @@ export interface NavItem extends NavLeaf {
 export const NAV_LINKS: NavItem[] = [
   { href: '/#o-mnie', label: 'O mnie' },
   { href: '/#uslugi', label: 'Usługi' },
-  {
-    href: '/serwis',
-    label: 'Serwis',
-    children: [
-      {
-        href: '/serwis/drukarki',
-        label: 'Serwis drukarek',
-        children: PRINTER_BRANDS.map((b) => ({
-          href: `/serwis/drukarki/${b.slug}`,
-          label: b.name,
-        })),
-      },
-      {
-        href: '/serwis/kserokopiarki',
-        label: 'Serwis kserokopiarek',
-        children: COPIER_BRANDS.map((b) => ({
-          href: `/serwis/kserokopiarki/${b.slug}`,
-          label: b.name,
-        })),
-      },
-    ],
-  },
   { href: '/#cennik', label: 'Cennik' },
   { href: '/#galeria', label: 'Galeria' },
   { href: '/#opinie', label: 'Opinie' },
   { href: '/#kontakt', label: 'Kontakt' },
+]
+
+export const FOOTER_LINKS: NavItem[] = [
+  ...NAV_LINKS,
   { href: '/privacy', label: 'Polityka prywatności' },
 ]

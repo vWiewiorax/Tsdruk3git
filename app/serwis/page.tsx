@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { ArrowRight, CheckCircle, Clock, MapPin, Phone } from 'lucide-react'
+import { ArrowRight, Clock, MapPin, Phone } from 'lucide-react'
 import SiteNav from '@/components/SiteNav'
 import SiteFooter from '@/components/SiteFooter'
 import { getAllPosts } from '@/lib/blog'
@@ -27,34 +27,6 @@ export const metadata: Metadata = {
     url: '/serwis',
   },
 }
-
-const devices = [
-  {
-    title: 'Drukarki atramentowe',
-    text: 'Zatkane i zaschnięte głowice, problemy z pobieraniem papieru, smugi i brak koloru, błędy pojemników z tuszem.',
-  },
-  {
-    title: 'Drukarki laserowe',
-    text: 'Wymiana bębna i rolek, naprawa jednostki utrwalającej, blade wydruki, smugi, zacięcia papieru i komunikaty o błędach.',
-  },
-  {
-    title: 'Kserokopiarki',
-    text: 'Naprawa i konserwacja kserokopiarek biurowych: podawanie papieru, jakość kopii, zespół bębna i utrwalania, regulacje.',
-  },
-  {
-    title: 'Urządzenia wielofunkcyjne',
-    text: 'Drukarka, skaner i kopiarka w jednym. Naprawiam część drukującą, podajnik dokumentów i konfiguruję skanowanie.',
-  },
-]
-
-const scope = [
-  'diagnostyka usterki i wycena przed naprawą, diagnostyka jest bezpłatna',
-  'naprawa mechanizmów podawania papieru, rolek i separatorów',
-  'czyszczenie głowic drukujących w drukarkach atramentowych',
-  'wymiana bębna, wałków i elementów zespołu utrwalającego',
-  'przeglądy prewencyjne i czyszczenie wnętrza urządzenia',
-  'instalacja sterowników, konfiguracja Wi-Fi i drukowania w sieci',
-]
 
 const steps = [
   {
@@ -237,45 +209,21 @@ export default function SerwisPage() {
         </div>
       </section>
 
-      {/* URZĄDZENIA */}
+      {/* MARKI */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <span className="text-blue-700 font-semibold uppercase tracking-widest text-sm">Urządzenia</span>
-          <h2 className="text-3xl font-extrabold text-gray-900 mt-2 mb-10">Co naprawiam</h2>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {devices.map((d) => (
-              <div key={d.title} className="bg-white border border-gray-200 rounded-2xl p-6">
-                <h3 className="font-bold text-lg text-gray-900 mb-2">{d.title}</h3>
-                <p className="text-gray-500 text-sm leading-relaxed">{d.text}</p>
-              </div>
+          <span className="text-blue-700 font-semibold uppercase tracking-widest text-sm">Marki</span>
+          <h2 className="text-3xl font-extrabold text-gray-900 mt-2 mb-8">Marki, które serwisuję</h2>
+          <ul className="flex flex-wrap gap-2 mb-5">
+            {BRANDS.map((b) => (
+              <li key={b} className="bg-white border border-gray-200 text-gray-700 text-sm font-semibold px-4 py-2 rounded-full">
+                {b}
+              </li>
             ))}
-          </div>
-          <div className="grid lg:grid-cols-2 gap-12 mt-14">
-            <div>
-              <h3 className="text-2xl font-extrabold text-gray-900 mb-5">Zakres usług</h3>
-              <ul className="space-y-3">
-                {scope.map((s) => (
-                  <li key={s} className="flex items-start gap-3 text-gray-700">
-                    <CheckCircle className="w-5 h-5 text-blue-600 shrink-0 mt-0.5" />
-                    <span>{s}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div>
-              <h3 className="text-2xl font-extrabold text-gray-900 mb-5">Marki, które serwisuję</h3>
-              <ul className="flex flex-wrap gap-2 mb-5">
-                {BRANDS.map((b) => (
-                  <li key={b} className="bg-white border border-gray-200 text-gray-700 text-sm font-semibold px-4 py-2 rounded-full">
-                    {b}
-                  </li>
-                ))}
-              </ul>
-              <p className="text-gray-500 text-sm leading-relaxed">
-                Nie widzisz swojej marki? Zadzwoń, a powiem, czy mogę pomóc z Twoim modelem.
-              </p>
-            </div>
-          </div>
+          </ul>
+          <p className="text-gray-500 text-sm leading-relaxed">
+            Nie widzisz swojej marki? Zadzwoń, a powiem, czy mogę pomóc z Twoim modelem.
+          </p>
         </div>
       </section>
 

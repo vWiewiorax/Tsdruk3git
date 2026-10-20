@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { Printer } from 'lucide-react'
-import { COMPANY_NAME, NAV_LINKS } from '@/lib/site'
+import { COMPANY_NAME, FOOTER_LINKS } from '@/lib/site'
 
 export default function SiteFooter() {
   return (
@@ -14,7 +14,7 @@ export default function SiteFooter() {
           © {new Date().getFullYear()} {COMPANY_NAME}. Wszelkie prawa zastrzeżone.
         </p>
         <div className="flex flex-wrap justify-center gap-5 text-sm">
-          {NAV_LINKS.map((l) => (
+          {FOOTER_LINKS.map((l) => (
             <Link key={l.href} href={l.href} className="hover:text-white transition-colors">
               {l.label}
             </Link>

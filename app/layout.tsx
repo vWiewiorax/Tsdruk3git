@@ -3,6 +3,7 @@ import { Geist, Oswald } from 'next/font/google'
 
 import './globals.css'
 import CookieConsent from '@/lib/cookies'
+import { SERVICE_AREA_CITIES } from '@/lib/site'
 
 const geistSans = Geist({ variable: '--font-geist-sans', subsets: ['latin'] })
 const oswald = Oswald({
@@ -294,25 +295,31 @@ export default function RootLayout({
               description:
                 'Profesjonalny serwis i naprawa drukarek atramentowych, laserowych i wielofunkcyjnych. Diagnostyka, czyszczenie głowic, wymiana bębna i tonera, naprawa podajników papieru.',
               url: 'https://www.tsdruk.pl',
-              telephone: '+48-YOUR-PHONE',
+              telephone: '+48 796 584 933',
               address: {
                 '@type': 'PostalAddress',
-                streetAddress: 'YOUR STREET ADDRESS',
-                addressLocality: 'YOUR CITY',
-                postalCode: 'YOUR POSTAL CODE',
+                streetAddress: 'Krzemienica 614',
+                addressLocality: 'Krzemienica',
+                postalCode: '37-127',
+                addressRegion: 'podkarpackie',
                 addressCountry: 'PL',
               },
-              geo: {
-                '@type': 'GeoCoordinates',
-                latitude: 'YOUR_LAT',
-                longitude: 'YOUR_LNG',
-              },
+              areaServed: [
+                'Podkarpacie',
+                ...SERVICE_AREA_CITIES,
+              ],
               openingHoursSpecification: [
                 {
                   '@type': 'OpeningHoursSpecification',
                   dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
                   opens: '08:00',
-                  closes: '17:00',
+                  closes: '16:00',
+                },
+                {
+                  '@type': 'OpeningHoursSpecification',
+                  dayOfWeek: 'Saturday',
+                  opens: '10:00',
+                  closes: '14:00',
                 },
               ],
               priceRange: '$$',
@@ -329,10 +336,6 @@ export default function RootLayout({
                   { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Serwis ploterów' } },
                 ],
               },
-              sameAs: [
-                'https://www.facebook.com/YOUR_PAGE',
-                'https://www.instagram.com/YOUR_PAGE',
-              ],
             }),
           }}
         />

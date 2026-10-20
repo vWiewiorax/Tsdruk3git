@@ -29,12 +29,14 @@ export default function SiteNav({ activeSection = '' }: { activeSection?: string
     <nav className={`fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur transition-shadow duration-300 ${scrolled ? 'shadow-md' : 'shadow-sm'}`}>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-18 py-3">
-          <Link href="/" className="flex items-center gap-2 font-extrabold text-2xl text-blue-700">
-            <Printer className="w-7 h-7" />
-            <span>{COMPANY_NAME}</span>
-          </Link>
+          <div className="lg:flex-1 lg:basis-0">
+            <Link href="/" className="inline-flex items-center gap-2 font-extrabold text-2xl text-blue-700">
+              <Printer className="w-7 h-7" />
+              <span>{COMPANY_NAME}</span>
+            </Link>
+          </div>
           {/* Desktop nav */}
-          <div className="hidden md:flex items-center gap-8">
+          <div className="hidden lg:flex items-center justify-center gap-5 xl:gap-7 px-4">
             {NAV_LINKS.map((l) =>
               l.children ? (
                 <div key={l.href} className="relative group">
@@ -80,22 +82,24 @@ export default function SiteNav({ activeSection = '' }: { activeSection?: string
                 <Link
                   key={l.href}
                   href={l.href}
-                  className={`font-medium transition-colors relative pb-0.5 ${isActive(l.href) ? 'text-blue-700 after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:bg-blue-700 after:rounded' : 'text-gray-600 hover:text-blue-700'}`}
+                  className={`font-medium whitespace-nowrap transition-colors relative pb-0.5 ${isActive(l.href) ? 'text-blue-700 after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:bg-blue-700 after:rounded' : 'text-gray-600 hover:text-blue-700'}`}
                 >
                   {l.label}
                 </Link>
               )
             )}
+          </div>
+          <div className="hidden lg:flex lg:flex-1 lg:basis-0 justify-end">
             <Link
               href="/#kontakt"
-              className="ml-2 bg-blue-700 hover:bg-blue-800 text-white px-5 py-2.5 rounded-full font-semibold transition-colors shadow-sm"
+              className="bg-blue-700 hover:bg-blue-800 text-white px-5 py-2.5 rounded-full font-semibold transition-colors shadow-sm whitespace-nowrap"
             >
               Zgłoś usterkę
             </Link>
           </div>
           {/* Mobile toggle */}
           <button
-            className="md:hidden text-gray-700"
+            className="lg:hidden text-gray-700"
             onClick={() => setMenuOpen(!menuOpen)}
             aria-label="Menu"
           >
@@ -105,7 +109,7 @@ export default function SiteNav({ activeSection = '' }: { activeSection?: string
       </div>
       {/* Mobile menu */}
       {menuOpen && (
-        <div className="md:hidden bg-white border-t px-4 pb-4 flex flex-col gap-1 max-h-[80vh] overflow-y-auto">
+        <div className="lg:hidden bg-white border-t px-4 pb-4 flex flex-col gap-1 max-h-[80vh] overflow-y-auto">
           {NAV_LINKS.map((l) =>
             l.children ? (
               <div key={l.href} className="border-b border-gray-100">

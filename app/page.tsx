@@ -37,71 +37,71 @@ const services = [
     icon: <Wrench className="w-8 h-8" />,
     title: 'Naprawa drukarek atramentowych',
     description:
-      'Usuwam zacięcia papieru, naprawiam głowice drukujące, wymieniam tusze i uszczelki. Obsługuję wszystkie popularne marki.',
+      'Usuwam zaciÄ™cia papieru, naprawiam gĹ‚owice drukujÄ…ce, wymieniam tusze i uszczelki. ObsĹ‚ugujÄ™ wszystkie popularne marki.',
   },
   {
     icon: <Printer className="w-8 h-8" />,
     title: 'Naprawa drukarek laserowych',
     description:
-      'Wymiana bębnów, kaset z tonerem, rolek podawania papieru i jednostek utrwalających. Naprawiam kserokopiarki i drukarki wielofunkcyjne.',
+      'Wymiana bÄ™bnĂłw, kaset z tonerem, rolek podawania papieru i jednostek utrwalajÄ…cych. Naprawiam kserokopiarki i drukarki wielofunkcyjne.',
   },
   {
     icon: <Zap className="w-8 h-8" />,
-    title: 'Diagnostyka i przegląd',
+    title: 'Diagnostyka i przeglÄ…d',
     description:
-      'Przeprowadzam pełną diagnostykę urządzenia, czyszczenie wnętrza oraz przegląd prewencyjny zapobiegający przyszłym awariom.',
+      'Przeprowadzam peĹ‚nÄ… diagnostykÄ™ urzÄ…dzenia, czyszczenie wnÄ™trza oraz przeglÄ…d prewencyjny zapobiegajÄ…cy przyszĹ‚ym awariom.',
   },
   {
     icon: <Shield className="w-8 h-8" />,
     title: 'Serwis pogwarancyjny',
     description:
-      'Wykonuję naprawy pogwarancyjne i udzielam własnej gwarancji na każdą wykonaną przeze mnie naprawę.',
+      'WykonujÄ™ naprawy pogwarancyjne i udzielam wĹ‚asnej gwarancji na kaĹĽdÄ… wykonanÄ… przeze mnie naprawÄ™.',
   },
   {
     icon: <Award className="w-8 h-8" />,
     title: 'Dojazd do klienta',
     description:
-      'Po wcześniejszym uzgodnieniu mogę odebrać drukarkę, naprawić ją i dostarczyć z powrotem.',
+      'Po wczeĹ›niejszym uzgodnieniu mogÄ™ odebraÄ‡ drukarkÄ™, naprawiÄ‡ jÄ… i dostarczyÄ‡ z powrotem.',
   },
   {
     icon: <CheckCircle className="w-8 h-8" />,
     title: 'Konfiguracja i instalacja',
     description:
-      'Instaluję sterowniki, konfiguruję sieć Wi-Fi i podłączam drukarkę do komputerów oraz urządzeń mobilnych.',
+      'InstalujÄ™ sterowniki, konfigurujÄ™ sieÄ‡ Wi-Fi i podĹ‚Ä…czam drukarkÄ™ do komputerĂłw oraz urzÄ…dzeĹ„ mobilnych.',
   },
 ]
 
 const pricing = [
-  { service: 'Diagnostyka / wycena', price: 'BEZPŁATNA', highlight: true },
-  { service: 'Naprawa drukarki atramentowej', price: 'od 80 zł', highlight: false },
-  { service: 'Naprawa drukarki laserowej', price: 'od 120 zł', highlight: false },
-  { service: 'Czyszczenie głowicy drukującej', price: 'od 50 zł', highlight: false },
-  { service: 'Wymiana bębna / wałka podającego', price: 'od 60 zł', highlight: false },
-  { service: 'Przegląd prewencyjny + czyszczenie', price: 'od 70 zł', highlight: false },
-  { service: 'Dojazd do klienta (po uzgodnieniu)', price: 'od 30 zł', highlight: false },
-  { service: 'Konfiguracja sieciowa / instalacja', price: 'od 50 zł', highlight: false },
+  { service: 'Diagnostyka / wycena', price: 'BEZPĹATNA', highlight: true },
+  { service: 'Naprawa drukarki atramentowej', price: 'od 80 zĹ‚', highlight: false },
+  { service: 'Naprawa drukarki laserowej', price: 'od 120 zĹ‚', highlight: false },
+  { service: 'Czyszczenie gĹ‚owicy drukujÄ…cej', price: 'od 50 zĹ‚', highlight: false },
+  { service: 'Wymiana bÄ™bna / waĹ‚ka podajÄ…cego', price: 'od 60 zĹ‚', highlight: false },
+  { service: 'PrzeglÄ…d prewencyjny + czyszczenie', price: 'od 70 zĹ‚', highlight: false },
+  { service: 'Dojazd do klienta (po uzgodnieniu)', price: 'od 30 zĹ‚', highlight: false },
+  { service: 'Konfiguracja sieciowa / instalacja', price: 'od 50 zĹ‚', highlight: false },
 ]
 
 const reviews = [
   {
     name: 'Anna K.',
     stars: 5,
-    text: 'Szybka i profesjonalna obsługa! Moja drukarka HP została naprawiona w ciągu jednego dnia. Polecam z czystym sumieniem.'
+    text: 'Szybka i profesjonalna obsĹ‚uga! Moja drukarka HP zostaĹ‚a naprawiona w ciÄ…gu jednego dnia. Polecam z czystym sumieniem.'
   },
   {
     name: 'Marek W.',
     stars: 5,
-    text: 'Bardzo rzetelny serwis. Dostałem darmową diagnozę, uczciwą wycenę i naprawę zgodnie z obietnicą. Na pewno wrócę.'
+    text: 'Bardzo rzetelny serwis. DostaĹ‚em darmowÄ… diagnozÄ™, uczciwÄ… wycenÄ™ i naprawÄ™ zgodnie z obietnicÄ…. Na pewno wrĂłcÄ™.'
   },
   {
     name: 'Jacek R.',
     stars: 5,
-    text: 'Serwisuje moje biuro od lat. Mam 12 drukarek pod opieką. Zawsze na czas, zawsze solidnie. Gorąco polecam!',
+    text: 'Serwisuje moje biuro od lat. Mam 12 drukarek pod opiekÄ…. Zawsze na czas, zawsze solidnie. GorÄ…co polecam!',
   },
   {
     name: 'Katarzyna M.',
     stars: 4,
-    text: 'Sprawna naprawa i miła obsługa. Moja drukarka działa jak nowa. Ceny uczciwe jak na rynek.'
+    text: 'Sprawna naprawa i miĹ‚a obsĹ‚uga. Moja drukarka dziaĹ‚a jak nowa. Ceny uczciwe jak na rynek.'
   },
 ]
 
@@ -191,14 +191,14 @@ const handleSubmit = async (e: React.FormEvent) => {
 
     if (!res.ok) {
       const body = await res.json().catch(() => ({}))
-      throw new Error(body.error || 'Wystąpił błąd podczas wysyłania.')
+      throw new Error(body.error || 'WystÄ…piĹ‚ bĹ‚Ä…d podczas wysyĹ‚ania.')
     }
 
     setSubmitted(true)
     setFormData({ name: '', phone: '', email: '', printerModel: '', problem: '' })
     setFiles([])
   } catch (err) {
-    setError(err instanceof Error ? err.message : 'Wystąpił błąd podczas wysyłania.')
+    setError(err instanceof Error ? err.message : 'WystÄ…piĹ‚ bĹ‚Ä…d podczas wysyĹ‚ania.')
   } finally {
     setSubmitting(false)
   }
@@ -262,21 +262,21 @@ const handleSubmit = async (e: React.FormEvent) => {
             </h1>
             <p className="text-gray-600 text-lg mb-8 leading-relaxed max-w-lg">
               Naprawiam drukarki atramentowe i laserowe wszystkich marek.
-              Szybka diagnostyka, uczciwa wycena i gwarancja na każdą naprawę.
+              Szybka diagnostyka, uczciwa wycena i gwarancja na kaĹĽdÄ… naprawÄ™.
             </p>
             <div className="flex flex-wrap gap-4 mb-10">
               <a href="#kontakt" className="bg-blue-700 hover:bg-blue-800 active:scale-95 text-white font-bold px-8 py-3.5 rounded-full text-lg transition-all shadow-lg shadow-blue-200">
-                Zgłoś usterkę
+                ZgĹ‚oĹ› usterkÄ™
               </a>
               <a href="#uslugi" className="border-2 border-blue-700 text-blue-700 hover:bg-blue-50 active:scale-95 font-semibold px-8 py-3.5 rounded-full text-lg transition-all">
-                Moje usługi
+                Moje usĹ‚ugi
               </a>
             </div>
             <div className="flex flex-wrap gap-5">
               {[
-                'Bezpłatna diagnostyka',
+                'BezpĹ‚atna diagnostyka',
                 'Naprawa w 24h',
-                'Gwarancja na naprawę',
+                'Gwarancja na naprawÄ™',
               ].map((t) => (
                 <div key={t} className="flex items-center gap-2 text-gray-600 text-sm">
                   <CheckCircle className="w-5 h-5 text-blue-600 shrink-0" />
@@ -285,7 +285,7 @@ const handleSubmit = async (e: React.FormEvent) => {
               ))}
             </div>
           </div>
-          {/* Right – animated printer */}
+          {/* Right â€“ animated printer */}
           <div className="hidden md:flex justify-center items-center">
             <div className="relative w-full max-w-md h-[420px] flex items-center justify-center">
               <div className="absolute inset-0 bg-blue-700 rounded-3xl rotate-3 opacity-10" />
@@ -346,9 +346,9 @@ const handleSubmit = async (e: React.FormEvent) => {
       <section className="bg-gradient-to-r from-blue-800 via-blue-700 to-blue-600 text-white py-12">
         <div className="max-w-5xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-0">
           {([
-            { value: 200, label: 'Zadowolonych klientów', icon: <Users className="w-10 h-10" /> },
+            { value: 200, label: 'Zadowolonych klientĂłw', icon: <Users className="w-10 h-10" /> },
             { value: 200, label: 'Naprawionych drukarek', icon: <Printer className="w-10 h-10" /> },
-            { value: 20,  label: 'Lat doświadczenia',     icon: <Award className="w-10 h-10" /> },
+            { value: 20,  label: 'Lat doĹ›wiadczenia',     icon: <Award className="w-10 h-10" /> },
             { value: 100, label: 'Gwarancja satysfakcji', icon: <ThumbsUp className="w-10 h-10" /> },
           ] as const).map((s, i) => (
             <div key={s.label} className={`flex flex-col items-center py-4 px-2 ${i < 3 ? 'md:border-r border-blue-600' : ''}`}>
@@ -368,11 +368,11 @@ const handleSubmit = async (e: React.FormEvent) => {
               <div className="relative h-full rounded-3xl overflow-hidden border-4 border-white shadow-xl bg-gray-100">
                 <img
                   src="/photo.png"
-                  alt="Tomasz Strzępka – serwisant drukarek"
+                  alt="Tomasz StrzÄ™pka â€“ serwisant drukarek"
                   className="w-full h-full object-cover"
                   onError={(e) => {
                     e.currentTarget.style.display = 'none'
-                    e.currentTarget.parentElement!.innerHTML = '<div class="flex flex-col items-center justify-center h-full gap-4 text-gray-400"><svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-16 h-16 opacity-30"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.1a2 2 0 0 1-1-1.72v-.51a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="3"/></svg><p class="text-sm font-medium text-center px-6 opacity-60">Dodaj zdjęcie jako<br/>public/photo.png</p></div>'
+                    e.currentTarget.parentElement!.innerHTML = '<div class="flex flex-col items-center justify-center h-full gap-4 text-gray-400"><svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-16 h-16 opacity-30"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.1a2 2 0 0 1-1-1.72v-.51a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="3"/></svg><p class="text-sm font-medium text-center px-6 opacity-60">Dodaj zdjÄ™cie jako<br/>public/photo.png</p></div>'
                   }}
                 />
               </div>
@@ -385,21 +385,21 @@ const handleSubmit = async (e: React.FormEvent) => {
               Naprawiam drukarki od ponad 20 lat
             </h2>
             <p className="text-gray-600 mb-4 leading-relaxed reveal reveal-delay-2">
-              Specjalizuję się w naprawie drukarek atramentowych i laserowych.
-              Obsługuję klientów indywidualnych, małe firmy oraz większe
-              przedsiębiorstwa w całym regionie.
+              SpecjalizujÄ™ siÄ™ w naprawie drukarek atramentowych i laserowych.
+              ObsĹ‚ugujÄ™ klientĂłw indywidualnych, maĹ‚e firmy oraz wiÄ™ksze
+              przedsiÄ™biorstwa w caĹ‚ym regionie.
             </p>
             <p className="text-gray-600 mb-7 leading-relaxed reveal reveal-delay-2">
-              Każdą naprawę zaczynam od bezpłatnej diagnostyki. Dopiero po
-              jej wykonaniu przedstawiam dokładną wycenę, bez ukrytych kosztów.
-              Na każdą wykonaną naprawę udzielam własnej gwarancji.
+              KaĹĽdÄ… naprawÄ™ zaczynam od bezpĹ‚atnej diagnostyki. Dopiero po
+              jej wykonaniu przedstawiam dokĹ‚adnÄ… wycenÄ™, bez ukrytych kosztĂłw.
+              Na kaĹĽdÄ… wykonanÄ… naprawÄ™ udzielam wĹ‚asnej gwarancji.
             </p>
             <ul className="space-y-3 mb-8 reveal reveal-delay-3">
               {[
-                'Obsługuję wszystkie marki: HP, Canon, Epson, Brother, Samsung i inne',
-                'Ponad 20 lat doświadczenia w serwisie drukarek',
-                'Używam części zamiennych i materiałów eksploatacyjnych',
-                'Naprawiam w serwisie lub na miejscu u klienta po wcześniejszym uzgodnieniu',
+                'ObsĹ‚ugujÄ™ wszystkie marki: HP, Canon, Epson, Brother, Samsung i inne',
+                'Ponad 20 lat doĹ›wiadczenia w serwisie drukarek',
+                'UĹĽywam czÄ™Ĺ›ci zamiennych i materiaĹ‚Ăłw eksploatacyjnych',
+                'Naprawiam w serwisie lub na miejscu u klienta po wczeĹ›niejszym uzgodnieniu',
               ].map((item) => (
                 <li key={item} className="flex items-start gap-3 text-gray-700">
                   <CheckCircle className="w-5 h-5 text-blue-600 shrink-0 mt-0.5" />
@@ -409,10 +409,10 @@ const handleSubmit = async (e: React.FormEvent) => {
             </ul>
             <div className="grid grid-cols-2 gap-4 reveal reveal-delay-4">
               {[
-                { icon: <Wrench className="w-10 h-10" />, title: 'Szybka naprawa', desc: 'Większość napraw w 24h' },
-                { icon: <Shield className="w-10 h-10" />, title: 'Gwarancja', desc: 'Na każdą wykonaną naprawę' },
-                { icon: <Zap className="w-10 h-10" />, title: 'Diagnoza gratis', desc: 'Płacisz tylko za naprawę' },
-                { icon: <Star className="w-10 h-10" />, title: '20 lat w branży', desc: 'Setki zadowolonych klientów' },
+                { icon: <Wrench className="w-10 h-10" />, title: 'Szybka naprawa', desc: 'WiÄ™kszoĹ›Ä‡ napraw w 24h' },
+                { icon: <Shield className="w-10 h-10" />, title: 'Gwarancja', desc: 'Na kaĹĽdÄ… wykonanÄ… naprawÄ™' },
+                { icon: <Zap className="w-10 h-10" />, title: 'Diagnoza gratis', desc: 'PĹ‚acisz tylko za naprawÄ™' },
+                { icon: <Star className="w-10 h-10" />, title: '20 lat w branĹĽy', desc: 'Setki zadowolonych klientĂłw' },
               ].map((card) => (
                 <div key={card.title} className="group bg-gray-50 rounded-2xl p-5 border border-gray-100 hover:border-blue-200 hover:shadow-md transition-all">
                   <div className="text-blue-600 mb-3 transition-transform duration-200 group-hover:scale-125 group-hover:-rotate-6">{card.icon}</div>
@@ -425,16 +425,16 @@ const handleSubmit = async (e: React.FormEvent) => {
         </div>
       </section>
 
-      {/* USŁUGI */}
+      {/* USĹUGI */}
       <section id="uslugi" className="py-24 bg-gray-50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-14 reveal">
-            <span className="text-blue-700 font-semibold uppercase tracking-widest text-sm">Usługi</span>
+            <span className="text-blue-700 font-semibold uppercase tracking-widest text-sm">UsĹ‚ugi</span>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900 mt-2">
-              Co naprawiam i co oferuję
+              Co naprawiam i co oferujÄ™
             </h2>
             <p className="text-gray-500 mt-3 max-w-xl mx-auto">
-              Kompleksowy serwis drukarek dla klientów indywidualnych i biznesowych.
+              Kompleksowy serwis drukarek dla klientĂłw indywidualnych i biznesowych.
             </p>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -463,7 +463,7 @@ const handleSubmit = async (e: React.FormEvent) => {
               Przejrzyste ceny, bez niespodzianek
             </h2>
             <p className="text-gray-500 mt-3 max-w-xl mx-auto">
-              Poniżej orientacyjne ceny usług. Dokładna wycena zawsze po bezpłatnej diagnostyce.
+              PoniĹĽej orientacyjne ceny usĹ‚ug. DokĹ‚adna wycena zawsze po bezpĹ‚atnej diagnostyce.
             </p>
           </div>
           <div className="space-y-3 reveal reveal-delay-1">
@@ -495,8 +495,8 @@ const handleSubmit = async (e: React.FormEvent) => {
             ))}
           </div>
           <p className="text-center text-gray-400 text-sm mt-6 reveal reveal-delay-2">
-            * Ceny mogą różnić się w zależności od stopnia uszkodzenia i modelu urządzenia.
-            Ostateczna wycena po diagnostyce, zawsze przed przystąpieniem do naprawy.
+            * Ceny mogÄ… rĂłĹĽniÄ‡ siÄ™ w zaleĹĽnoĹ›ci od stopnia uszkodzenia i modelu urzÄ…dzenia.
+            Ostateczna wycena po diagnostyce, zawsze przed przystÄ…pieniem do naprawy.
           </p>
         </div>
       </section>
@@ -507,10 +507,10 @@ const handleSubmit = async (e: React.FormEvent) => {
           <div className="text-center mb-14 reveal">
             <span className="text-blue-700 font-semibold uppercase tracking-widest text-sm">Galeria</span>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900 mt-2">
-              Sprzęt, który naprawiam
+              SprzÄ™t, ktĂłry naprawiam
             </h2>
             <p className="text-gray-500 mt-3 max-w-2xl mx-auto">
-              Naprawiam drukarki i urządzenia wielofunkcyjne najpopularniejszych marek.
+              Naprawiam drukarki i urzÄ…dzenia wielofunkcyjne najpopularniejszych marek.
             </p>
           </div>
 
@@ -534,6 +534,11 @@ const handleSubmit = async (e: React.FormEvent) => {
             <div className="flex gap-6 marquee-content animate-marquee w-max">
               {[
                 ...[
+                  { src: '/gallery/epson-wf-7830.jpg', alt: 'Epson WorkForce WF-7830' },
+                  { src: '/gallery/epson-l3150.jpg', alt: 'Epson EcoTank L3150' },
+                  { src: '/gallery/hp-smart-tank-670.jpg', alt: 'HP Smart Tank 670' },
+                  { src: '/gallery/hp-deskjet-2920.jpg', alt: 'HP DeskJet 2920' },
+                  { src: '/gallery/canon-pixma-g3410.jpg', alt: 'Canon PIXMA G3410 WiFi' },
                   { src: '/gallery/hp.webp', alt: 'HP' },
                   { src: '/gallery/samsung.jpg', alt: 'Samsung' },
                   { src: '/gallery/brother.jpg', alt: 'Brother' },
@@ -546,6 +551,11 @@ const handleSubmit = async (e: React.FormEvent) => {
                   { src: '/gallery/lexmark.jpg', alt: 'Lexmark' },
                 ],
                 ...[
+                  { src: '/gallery/epson-wf-7830.jpg', alt: 'Epson WorkForce WF-7830' },
+                  { src: '/gallery/epson-l3150.jpg', alt: 'Epson EcoTank L3150' },
+                  { src: '/gallery/hp-smart-tank-670.jpg', alt: 'HP Smart Tank 670' },
+                  { src: '/gallery/hp-deskjet-2920.jpg', alt: 'HP DeskJet 2920' },
+                  { src: '/gallery/canon-pixma-g3410.jpg', alt: 'Canon PIXMA G3410 WiFi' },
                   { src: '/gallery/hp.webp', alt: 'HP' },
                   { src: '/gallery/samsung.jpg', alt: 'Samsung' },
                   { src: '/gallery/brother.jpg', alt: 'Brother' },
@@ -585,7 +595,7 @@ const handleSubmit = async (e: React.FormEvent) => {
           <div className="text-center mb-14 reveal">
             <span className="text-blue-700 font-semibold uppercase tracking-widest text-sm">Opinie</span>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900 mt-2">
-              Co mówią moi klienci
+              Co mĂłwiÄ… moi klienci
             </h2>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -616,10 +626,10 @@ const handleSubmit = async (e: React.FormEvent) => {
       <section className="py-20 bg-gradient-to-b from-blue-800 via-blue-700 to-blue-700">
         <div className="max-w-3xl mx-auto px-4 text-center reveal">
           <h2 className="text-3xl sm:text-4xl font-extrabold text-white mb-4">
-            Naprawię Twoją drukarkę już w 24h
+            NaprawiÄ™ TwojÄ… drukarkÄ™ juĹĽ w 24h
           </h2>
           <p className="text-blue-100 text-lg mb-8">
-            Zadzwoń teraz lub wyślij zgłoszenie. Bezpłatna diagnostyka i uczciwa wycena.
+            ZadzwoĹ„ teraz lub wyĹ›lij zgĹ‚oszenie. BezpĹ‚atna diagnostyka i uczciwa wycena.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <a
@@ -633,7 +643,7 @@ const handleSubmit = async (e: React.FormEvent) => {
               href="#kontakt"
               className="flex items-center gap-2 border-2 border-white text-white font-bold px-8 py-3.5 rounded-full text-lg hover:bg-white/10 transition-colors"
             >
-              Wyślij zgłoszenie
+              WyĹ›lij zgĹ‚oszenie
               <ArrowRight className="w-5 h-5" />
             </a>
           </div>
@@ -647,7 +657,7 @@ const handleSubmit = async (e: React.FormEvent) => {
           <div>
             <span className="text-blue-700 font-semibold uppercase tracking-widest text-sm">Kontakt</span>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900 mt-2 mb-8">
-              Skontaktuj się ze mną
+              Skontaktuj siÄ™ ze mnÄ…
             </h2>
             <div className="space-y-5">
               <a
@@ -689,7 +699,7 @@ const handleSubmit = async (e: React.FormEvent) => {
                 </div>
                 <div>
                   <div className="text-xs text-gray-500 mb-0.5">Godziny otwarcia</div>
-                  <div className="font-semibold">Pn – Pt: {HOURS_WEEKDAY}</div>
+                  <div className="font-semibold">Pn â€“ Pt: {HOURS_WEEKDAY}</div>
                   <div className="font-semibold">Sobota: {HOURS_SATURDAY}</div>
                 </div>
               </div>
@@ -701,25 +711,25 @@ const handleSubmit = async (e: React.FormEvent) => {
             {submitted ? (
               <div className="h-full flex flex-col items-center justify-center text-center py-8">
                 <CheckCircle className="w-16 h-16 text-green-500 mb-4" />
-                <h3 className="text-2xl font-bold text-gray-800 mb-2">Zgłoszenie wysłane!</h3>
+                <h3 className="text-2xl font-bold text-gray-800 mb-2">ZgĹ‚oszenie wysĹ‚ane!</h3>
                 <p className="text-gray-500">
-                  Dziękuję za kontakt. Odezwę się do Ciebie najszybciej jak to możliwe.
+                  DziÄ™kujÄ™ za kontakt. OdezwÄ™ siÄ™ do Ciebie najszybciej jak to moĹĽliwe.
                 </p>
                 <button
                   onClick={() => setSubmitted(false)}
                   className="mt-6 text-blue-600 font-semibold hover:underline"
                 >
-                  Wyślij kolejne zgłoszenie
+                  WyĹ›lij kolejne zgĹ‚oszenie
                 </button>
               </div>
             ) : (
               <>
-                <h3 className="text-xl font-bold text-gray-800 mb-6">Zgłoś usterkę drukarki</h3>
+                <h3 className="text-xl font-bold text-gray-800 mb-6">ZgĹ‚oĹ› usterkÄ™ drukarki</h3>
                 <form  className="space-y-4">
                   <div className="grid sm:grid-cols-2 gap-4">
     <div>
       <label className="block text-sm font-medium text-gray-800 mb-1">
-        Imię i nazwisko <span className="text-red-500">*</span>
+        ImiÄ™ i nazwisko <span className="text-red-500">*</span>
       </label>
       <input
         type="text"
@@ -777,13 +787,13 @@ const handleSubmit = async (e: React.FormEvent) => {
       value={formData.problem}
       onChange={(e) => setFormData({ ...formData, problem: e.target.value })}
       className="w-full border border-gray-400 bg-gray-50 rounded-xl px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-sm resize-none text-gray-900 placeholder:text-gray-400"
-      placeholder="Opisz krótko co się dzieje z Twoją drukarką..."
+      placeholder="Opisz krĂłtko co siÄ™ dzieje z TwojÄ… drukarkÄ…..."
     />
   </div>
                   {/* FILE UPLOAD */}
                   <div>
                     <label className="block text-sm font-medium text-gray-700 mb-1">
-                      Zdjęcia / pliki (opcjonalnie)
+                      ZdjÄ™cia / pliki (opcjonalnie)
                     </label>
                     <div
                       className={`relative border-2 border-dashed rounded-xl px-4 py-5 text-center transition-colors ${
@@ -810,9 +820,9 @@ const handleSubmit = async (e: React.FormEvent) => {
                           <Paperclip className="w-5 h-5" />
                         </div>
                         <p className="text-xs">
-                          <span className="font-semibold text-blue-600">Kliknij</span> lub przeciągnij pliki tutaj
+                          <span className="font-semibold text-blue-600">Kliknij</span> lub przeciÄ…gnij pliki tutaj
                         </p>
-                        <p className="text-xs text-gray-300">JPG, PNG, PDF, DOC, maks. 5 plików</p>
+                        <p className="text-xs text-gray-300">JPG, PNG, PDF, DOC, maks. 5 plikĂłw</p>
                       </div>
                     </div>
                     {files.length > 0 && (
@@ -837,8 +847,8 @@ const handleSubmit = async (e: React.FormEvent) => {
                   </div>
                               {!isFormValid && (
     <p className="text-xs text-gray-500">
-      Uzupełnij wymagane pola: {[
-        !formData.name.trim() && 'imię i nazwisko',
+      UzupeĹ‚nij wymagane pola: {[
+        !formData.name.trim() && 'imiÄ™ i nazwisko',
         !formData.phone.trim() && 'telefon',
         !formData.problem.trim() && 'opis problemu',
       ].filter(Boolean).join(', ')}
@@ -858,7 +868,7 @@ const handleSubmit = async (e: React.FormEvent) => {
     className="w-full bg-blue-800 hover:bg-blue-900 active:scale-95 disabled:bg-gray-300 disabled:cursor-not-allowed disabled:active:scale-100 text-white font-bold py-3 rounded-xl flex items-center justify-center gap-2 transition-all text-sm"
   >
     <Send className="w-4 h-4" />
-    {submitting ? 'Wysyłanie...' : 'Wyślij zgłoszenie'}
+    {submitting ? 'WysyĹ‚anie...' : 'WyĹ›lij zgĹ‚oszenie'}
   </button>
 </form>
               </>

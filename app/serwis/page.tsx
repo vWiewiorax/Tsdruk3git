@@ -13,6 +13,7 @@ import {
   SERVICE_AREA_CITIES,
   SERVICE_BASE,
   SITE_URL,
+  citySlug,
 } from '@/lib/site'
 
 export const metadata: Metadata = {
@@ -170,12 +171,14 @@ export default function SerwisPage() {
             </p>
             <ul className="flex flex-wrap gap-2">
               {SERVICE_AREA_CITIES.map((city) => (
-                <li
-                  key={city}
-                  className="flex items-center gap-1.5 bg-blue-50 text-blue-800 text-sm font-semibold px-3.5 py-1.5 rounded-full"
-                >
-                  <MapPin className="w-3.5 h-3.5" />
-                  {city}
+                <li key={city}>
+                  <Link
+                    href={`/serwis-drukarek/${citySlug(city)}`}
+                    className="flex items-center gap-1.5 bg-blue-50 text-blue-800 text-sm font-semibold px-3.5 py-1.5 rounded-full hover:bg-blue-100 transition-colors"
+                  >
+                    <MapPin className="w-3.5 h-3.5" />
+                    {city}
+                  </Link>
                 </li>
               ))}
             </ul>

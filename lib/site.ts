@@ -65,3 +65,41 @@ export const FOOTER_LINKS: NavItem[] = [
   ...NAV_LINKS,
   { href: '/privacy', label: 'Polityka prywatności' },
 ]
+
+export function citySlug(name: string): string {
+  return name
+    .toLowerCase()
+    .replace(/ł/g, 'l')
+    .replace(/ś/g, 's')
+    .replace(/[żź]/g, 'z')
+    .replace(/ń/g, 'n')
+    .replace(/ę/g, 'e')
+    .replace(/ó/g, 'o')
+    .replace(/ć/g, 'c')
+    .replace(/ą/g, 'a')
+    .replace(/\s+/g, '-')
+}
+
+export interface CityPage {
+  slug: string
+  name: string
+  gen: string
+  loc: string
+}
+
+export const CITY_PAGES: CityPage[] = [
+  { slug: 'rzeszow', name: 'Rzeszów', gen: 'Rzeszowa', loc: 'Rzeszowie' },
+  { slug: 'lancut', name: 'Łańcut', gen: 'Łańcuta', loc: 'Łańcucie' },
+  { slug: 'przeworsk', name: 'Przeworsk', gen: 'Przeworska', loc: 'Przeworsku' },
+  { slug: 'jaroslaw', name: 'Jarosław', gen: 'Jarosławia', loc: 'Jarosławiu' },
+  { slug: 'przemysl', name: 'Przemyśl', gen: 'Przemyśla', loc: 'Przemyślu' },
+  { slug: 'lezajsk', name: 'Leżajsk', gen: 'Leżajska', loc: 'Leżajsku' },
+  { slug: 'lubaczow', name: 'Lubaczów', gen: 'Lubaczowa', loc: 'Lubaczowie' },
+  { slug: 'nowa-deba', name: 'Nowa Dęba', gen: 'Nowej Dęby', loc: 'Nowej Dębie' },
+  { slug: 'mielec', name: 'Mielec', gen: 'Mielca', loc: 'Mielcu' },
+  { slug: 'tarnobrzeg', name: 'Tarnobrzeg', gen: 'Tarnobrzega', loc: 'Tarnobrzegu' },
+  { slug: 'debica', name: 'Dębica', gen: 'Dębicy', loc: 'Dębicy' },
+  { slug: 'ropczyce', name: 'Ropczyce', gen: 'Ropczyc', loc: 'Ropczycach' },
+  { slug: 'kolbuszowa', name: 'Kolbuszowa', gen: 'Kolbuszowej', loc: 'Kolbuszowej' },
+  { slug: 'brzostek', name: 'Brzostek', gen: 'Brzostka', loc: 'Brzostku' },
+]

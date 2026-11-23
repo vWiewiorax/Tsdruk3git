@@ -534,6 +534,11 @@ const handleSubmit = async (e: React.FormEvent) => {
             <div className="flex gap-6 marquee-content animate-marquee w-max">
               {[
                 ...[
+                  { src: '/gallery/epson-wf-7830.jpg', alt: 'Epson WorkForce WF-7830' },
+                  { src: '/gallery/epson-l3150.jpg', alt: 'Epson EcoTank L3150' },
+                  { src: '/gallery/hp-smart-tank-670.jpg', alt: 'HP Smart Tank 670' },
+                  { src: '/gallery/hp-deskjet-2920.jpg', alt: 'HP DeskJet 2920' },
+                  { src: '/gallery/canon-pixma-g3410.jpg', alt: 'Canon PIXMA G3410 WiFi' },
                   { src: '/gallery/hp.webp', alt: 'HP' },
                   { src: '/gallery/samsung.jpg', alt: 'Samsung' },
                   { src: '/gallery/brother.jpg', alt: 'Brother' },
@@ -546,6 +551,11 @@ const handleSubmit = async (e: React.FormEvent) => {
                   { src: '/gallery/lexmark.jpg', alt: 'Lexmark' },
                 ],
                 ...[
+                  { src: '/gallery/epson-wf-7830.jpg', alt: 'Epson WorkForce WF-7830' },
+                  { src: '/gallery/epson-l3150.jpg', alt: 'Epson EcoTank L3150' },
+                  { src: '/gallery/hp-smart-tank-670.jpg', alt: 'HP Smart Tank 670' },
+                  { src: '/gallery/hp-deskjet-2920.jpg', alt: 'HP DeskJet 2920' },
+                  { src: '/gallery/canon-pixma-g3410.jpg', alt: 'Canon PIXMA G3410 WiFi' },
                   { src: '/gallery/hp.webp', alt: 'HP' },
                   { src: '/gallery/samsung.jpg', alt: 'Samsung' },
                   { src: '/gallery/brother.jpg', alt: 'Brother' },
